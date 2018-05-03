@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container po_r mt15">
+  <div class="row">
+      <div class="bor-bgray pa15 clear">
+        <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei mr5 co_93"></i>第二步：设置二级指标行为标签，可帮助学校对学生评价/评分操作进行参考<span class="text-warning">（非必设置项，可跳过）</span></div>
+      </div>
+    <div class="qkycadr ml15 mr15 mb15 clear">
+      <div class="col-sm-3 pa0 bor-r">
+        <div class="bor-bgray pa15 fz_15">选中二级指标后，添加减分标签/加分标签</div>
+        <div class="mb15 side-menu">
+          <div class="bor-bgray pa15 clear"><div class="fz_16"><i class="iconfont icon-zhankai"></i>思想品德</div></div>
+          <ul class="ul-menu">
+            <li class="active">
+              <a href="" class="line-2 co_33 pa15">思想品德</a>
+            </li>
+            <li>
+              <a href="" class="line-2 co_33 pa15">品德发展</a>
+            </li>
+            <li>
+              <a href="" class="line-2 co_33 pa15">公民意识</a>
+            </li>
+          </ul>
+          <div class="bor-bgray pa15 clear"><div class="fz_16"><i class="iconfont icon-zhankai"></i>学业水平</div></div>
+          <ul class="ul-menu">
+            <li>
+              <a href="#" class="line-2 co_33 pa15">学业成绩</a>
+            </li>
+            <li>
+              <a href="#" class="line-2 co_33 pa15">学业潜力</a>
+            </li>
+            <li>
+              <a href="#" class="line-2 co_33 pa15">学业素养</a>
+            </li>
+            <li>
+              <a href="#" class="line-2 co_33 pa15">选课成绩</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-sm-9 pa0">
+        <div class="tab" role="tabpanel">
+        <!-- Nav tabs -->
+        <div class="nav nav-tabs">
+          <ul class="fl" role="tablist">
+            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">减分标签</a></li>
+            <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">加分标签</a></li>
+            
+          </ul>
+          <div class="fr pt10 pr15"><a type="" class="btn btn-default ml15"><i class="iconfont icon-zengjia fz_14 mr5"></i>新增标签</a></div>
+          
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content tabs">
+          <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+            <div class="co_93 pt15 pl15"><i class="iconfont icon-gantanhao mr5"></i>已有评价记录标签，不能删除</div>
+            <div class="pa15">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">没完成作业</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">上课期间与同学打扰</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0"><input type="" class="form-control" placeholder="输入标签内容"></div>
+                <div class="col-sm-2 pa0"><input type="" class="form-control" placeholder="分值如“-1分”"></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-baocun" title="保存"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+            </div>
+            
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="Section2">
+            <div class="co_93 pt15 pl15"><i class="iconfont icon-gantanhao mr5"></i>已有评价记录标签，不能删除</div>
+            <div class="pa15">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">完成作业</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">上课期间表现良好</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">完成作业</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0">上课期间表现良好</div>
+                <div class="col-sm-2 pa0"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-bianji" title="编辑"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-9 pl0"><input type="" class="form-control" placeholder="输入标签内容"></div>
+                <div class="col-sm-2 pa0"><input type="" class="form-control" placeholder="分值如“+1分”"></div>
+                <div class="col-sm-1 pr0 text-right"><a href="#" class="iconfont icon-baocun" title="保存"></a><a href="#" class="iconfont icon-shanchu" title="删除"></a></div>
+              </div>
+            </div>
+            <div class="page-header mt0"></div>
+            <div class="form-group row mb20">
+              <div class="col-sm-12 text-center">
+                <a class="btn btn-default">取消操作</a>
+                <a href="01creat01.html" class="btn btn-primary">保存提交</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-12 pa0">
+        <div class="page-header mt0"></div>
+        <div class="form-group row mb20">
+          <div class="col-sm-12 text-center">
+            <a href="01creat01.html" class="btn btn-default">上一步</a>
+            <a href="01creat03.html" class="btn btn-primary">继续下一步</a>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","rach"]
+ ,function(j,b,n,dw,rach){
+	 opt.navli_j[0].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
+});
+
+</script>
+</body>
+</html>

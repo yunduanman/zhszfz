@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container po_r mt15">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="div-user pa20 text-center co_ff">
+        <img src="../images/teacher.jpg" class="img-circle img-100 img-bor"> 
+        <div class="fz_16 pt15">张晓明<span class="ml15 bor-fff radius-12 pl10 pr10">管理员</span></div>  
+        <div class="pt15">带班：<span>初一（1）班</span>，<span>初一（2）班</span></div>  
+      </div>
+      <div class="qkycadr mb15 side-menu smenu-bg">
+        <div class="bor-bgray pa15 clear"><div class="fl fz_16">我的工作</div></div>
+        <ul class="ul-menu">
+          <li class="active">
+            <a href="01index.html" class="line-2 co_33 pa10"><i class="iconfont icon-zhuye mr5"></i>我的主页</a>
+          </li>
+          <li>
+            <a href="01evaluate-system.html" class="line-2 co_33 pa10"><i class="iconfont icon-tixi mr5"></i>评价体系</a>
+          </li>
+          <li>
+            <a href="#" class="line-2 co_33 pa10"><i class="iconfont icon-geren mr5"></i>学生信息</a>
+          </li>
+        </ul>
+        <div class="bor-bgray pa15 clear"><div class="fl fz_16">基础信息</div></div>
+        <ul class="ul-menu">
+          <li>
+            <a href="01term-setting.html" class="line-2 co_33 pa10"><i class="iconfont icon-shezhi mr5"></i>学期设置</a>
+          </li>
+          <li>
+            <a href="#" class="line-2 co_33 pa10"><i class="iconfont icon-moban mr5"></i>权限设置</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="col-sm-9 pa0">
+      <div class="col-sm-12 pl0">
+        <div class="tab qkycadr mb15" role="tabpanel">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Section01" aria-controls="app" role="tab" data-toggle="tab" class="fz_16">常用应用</a></li>
+            <li role="presentation"><a href="#Section02" aria-controls="progress" role="tab" data-toggle="tab" class="fz_16">评价工作进度</a></li>
+          </ul>
+           <div class="tab-content tabs">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section01">
+              <div class="row pa20 text-center">
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-xueye"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">学业水平</div>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-jiankang"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">身心健康</div>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-yishu"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">艺术素养</div>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-shijian"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">实践活动</div>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-jubanpeixunban"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">课程中心</div>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#">
+                  <div class="mb10">
+                    <svg class="icon fz_60" aria-hidden="true">
+                      <use xlink:href="#icon-gengduo"></use>
+                    </svg>
+                  </div>
+                  <div class="co_63">更多应用</div>
+                  </a>
+                </div>
+               <!-- <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 pa0">
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 co_blue"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class=""><i class="iconfont icon-xueyechengji fz_50 text-primary"></i></div>
+                    <p>学业水平</p>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section02">
+              <div class="row ma0 progress-nav pt20 pb20">
+                <div class="col-sm-3 po_r finish">
+                  <div class="progress-sign"><i class="iconfont icon-finish"></i></div>
+                  <div class="mt15 progress-cont">根据学校需求，创建评价标准指标及采集数据源设置；</div>
+                </div>
+                <div class="col-sm-3 po_r finish">
+                  <div class="progress-sign"><i class="iconfont icon-finish"></i></div>
+                  <div class="mt15 progress-cont">评价进行中，学校主动评价、家长/学生申报由学校审核；</div>
+                </div>
+                <div class="col-sm-3 po_r active">
+                  <div class="progress-sign"><i class="iconfont icon-finish"></i></div>
+                  <div class="mt15 progress-cont">评价（学期）结束，学校正式安排审核、学生自查（申诉）；</div>
+                </div>
+                <div class="col-sm-3 po_r">
+                  <div class="progress-sign"><i class="iconfont icon-finish"></i></div>
+                  <div class="mt15 progress-cont">最终确认无误归档，归档后将无法再修改。</div>
+                </div>
+              </div>
+              <div class="bg-gray pl15 pr15 pt10 pb10 fz_13"><i class="iconfont icon-tongzhi fz_14 mr5"></i>温馨提示：请管理员及时创建</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 pl0">
+        
+        <div class="tab" role="tabpanel">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs qkycadr mb15" role="tablist">
+            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">本学期</a></li>
+            <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">动态</a></li>
+            <li role="presentation"><a href="#Section3" aria-controls="follow" role="tab" data-toggle="tab" class="fz_16">家长提问</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content tabs">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+              <div class="row co_ff ml0 mb15">
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-grn">
+                    <img src="../images/percent01.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>89.9%</h3>
+                      <div>总完成率</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-cyan">
+                    <img src="../images/percent02.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>1287</h3>
+                      <div>需要评价学生数</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-blue">
+                    <img src="../images/percent03.jpg" class="po_ab">
+                    <div class="per-cont zindex2">
+                      <h3>1500
+                        <span class="fr po_r mr5 percent-tops">
+                          <i class="iconfont icon-icon_wenhao fz_22"></i>
+                          <div class="popover po_ab co_63">
+                            <div class="popover-content">评价标准<strong class="text-warning">全部指标</strong>评价完成，算为1个完成评价学生</div>
+                          </div>
+                        </span>
+                      </h3>
+                      <div>完成评价学生数</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="percent bg-ylw">
+                    <img src="../images/percent04.jpg" class="po_ab">
+                    <div class="per-cont">
+                      <h3>82.5%</h3>
+                      <div>审核通过率</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-zhuzhuangtu mr5"></i>学生评价申报情况<span class="co_93 fz_13">（每日凌晨更新一次）</span></div>
+                <div class="data_view_limain" id="stu-ranking"></div>
+                <div class="bg-gray pl15 pr15 pt10 pb10 fz_13"><i class="iconfont icon-tongzhi fz_14 mr5"></i>完成率=全完成申报学生数/评价学生总数*100%</div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="row">
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-koufen mr5 error_color"></i>扣分前五名</div>
+                    <ul class="pl15">
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                      <li class="pb15">1、初一（1）班   -21分</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-jiafen mr5 text-success"></i>加分前五名</div>
+                    <ul class="pl15">
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                      <li class="pb15">1、初一（1）班   +21分</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-bingzhuangtu mr5"></i>成绩导入情况<span class="co_93 fz_13">（全校班级数：1500）</span></div>
+                <div class="row">
+                  <div class="col-sm-6 ">
+                    <div class="ml15 pl10 clear fz_15 bor-lb">期末考试</div>
+                    <div class="data_view_limain" id="score-pie"></div>
+                  </div>
+                  <div class="col-sm-6 ">
+                    <div class="ml15 pl10 clear fz_15 bor-lb">体育测试</div>
+                    <div class="data_view_limain" id="text-pie"></div>
+                  </div>
+                </div>
+              </div>
+              <!--冷启动begin-->
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-zhuzhuangtu mr5"></i>学生评价申报情况<span class="co_93 fz_13">（每日凌晨更新一次）</span></div>
+                <div class="nodata">
+				  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wushuju"></use>
+                  </svg>
+                  <div class="pa15">暂无统计数据，请稍后查看</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="row">
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-koufen mr5 error_color"></i>扣分前五名</div>
+                    <div class="nodata">
+					  <svg class="icon fz_100" aria-hidden="true">
+                        <use xlink:href="#icon-wushuju"></use>
+                      </svg>
+                      <div class="pa15">暂无任何数据</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 bor-r">
+                    <div class="pa15 clear fz_15"><i class="iconfont icon-jiafen mr5 text-success"></i>加分前五名</div>
+                    <div class="nodata">
+					  <svg class="icon fz_100" aria-hidden="true">
+                        <use xlink:href="#icon-wushuju"></use>
+                      </svg>
+                      <div class="pa15">暂无任何数据</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="pa15 clear fz_15"><i class="iconfont icon-bingzhuangtu mr5"></i>成绩导入情况<span class="co_93 fz_13">（全校班级数：1500）</span></div>
+                <div class="nodata">
+				  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wushuju"></use>
+                  </svg>
+                  <div class="pa15">暂无任何数据</div>
+                </div>
+              </div>
+              <!--冷启动over-->
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section2">
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-blue mt15 ml15 img-40 text-center"><i class="iconfont icon-pingjia fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">学生评价</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">杨鹏老师，对初一（1）班学生进行行为录入</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-cyan mt15 ml15 img-40 text-center"><i class="iconfont icon-xueyechengji fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">学业水平</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">杨鹏老师，已导入初一1班期末考试成绩</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-red mt15 ml15 img-40 text-center"><i class="iconfont icon-jiankang1 fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">身心健康</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">杨鹏老师，已导入初一1班、初三3班、初三1班 体育测试成绩</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-ylw mt15 ml15 img-40 text-center"><i class="iconfont icon-yishu fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">艺术素养</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">杨鹏老师，已上传杨鹏、阙海滔等学生的荣誉信息</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-grn mt15 ml15 img-40 text-center"><i class="iconfont icon-huodong fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">社会实践</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">杨鹏老师，已发起初一（1）班、初二（1）班等社区服务活动</div>
+                </div>
+              </div>
+              <div class="qkycadr mb15">
+                <div class="dynamic po_r wd100">
+                  <div class="po_ab"><div class="bg-primary mt15 ml15 img-40 text-center"><i class="iconfont icon-kecheng fz_28 co_ff"></i></div></div>
+                  <div class="clear">
+                    <div class="fl">校本课程</div>
+                    <div class="fr co_93">2018-03-22</div>
+                  </div>
+                  <div class="co_33 mt5">已完成 初一年级、初二年级的校本课程选课，可使用“课程圈”进行教学互动</div>
+                </div>
+              </div>
+              
+              <!--冷启动begin-->
+              <div class="qkycadr mb15">
+                <div class="nodata">
+				  <svg class="icon fz_100" aria-hidden="true">
+                    <use xlink:href="#icon-wudongtai"></use>
+                  </svg>
+                  <div class="pa15">暂无动态信息，请稍后查看</div>
+                </div>
+              </div>
+              <!--冷启动over-->
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section3">
+                 
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-sm-4 pl0">
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 fz_16 co_33">待审核任务<span class="co_93 fz_13">（<strong class="text-warning">5</strong>）</span></div>
+          <ul class="div-box pl15 pr15">
+            <li>
+              <a href="#" class="co_63">阙海滔家长已上传评价申报信息</a>
+            </li>
+            <li>
+              <a href="#" class="co_63">阙海滔家长已上传评价申报信息</a>
+            </li>
+            <li>
+              <a href="#" class="co_63">阙海滔家长已上传评价申报信息</a>
+            </li>
+            <li>
+              <a href="#" class="co_63">阙海滔家长已上传评价申报信息</a>
+            </li>
+            <li>
+              <a href="#" class="co_63">阙海滔家长已阙海滔家长已上传评价申阙海滔家长已上传评价申报信息</a>
+            </li>
+          </ul>
+          <div class="pa15"><a href="#" class="btn btn-primary btn-md block"><i class="iconfont icon-shenhe mr5"></i>开始审核</a></div>
+        </div>
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 clear">
+            <div class="fl fz_16 co_33">学生荣誉<span class="co_93 fz_13">（共135）</span></div>
+            <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
+          </div>
+          <div class="pa15">
+            <a href="#">
+              <img src="../images/honor_pic.jpg" class="wd100">
+              <div class="mt10 co_33"><span class="text-primary">[省级]</span> 高中生信息技术比赛</div>
+            </a>
+          </div>
+        </div>
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 clear">
+            <div class="fl fz_16 co_33">实践活动<span class="co_93 fz_13">（共135）</span></div>
+            <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
+          </div>
+          <div class="pa15">
+            <a href="#">
+              <img src="../images/act0.jpg" class="wd100">
+              <div class="mt10 co_33"><span class="text-primary">[社会实践]</span> 2018年度春季高中生社会实践</div>
+            </a>
+          </div>
+        </div>
+        <!--冷启动begin-->
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 fz_16 co_33">待审核任务<span class="co_93 fz_13">（<strong class="text-warning">0</strong>）</span></div>
+          <div class="nodata">
+			<svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wurenwu"></use>
+            </svg>
+            <div class="pa15">暂无待审核事项</div>
+          </div>
+        </div>
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 clear">
+            <div class="fl fz_16 co_33">学生荣誉<span class="co_93 fz_13">（共0）</span></div>
+            <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
+          </div>
+          <div class="nodata">
+			<svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wurongyu"></use>
+            </svg>
+            <div class="pa15">暂无荣誉</div>
+          </div>
+        </div>
+        <div class="qkycadr mb15">
+          <div class="bor-bgray pa15 clear">
+            <div class="fl fz_16 co_33">实践活动<span class="co_93 fz_13">（共0）</span></div>
+            <a href="#" class="fr co_63">更多<i class="iconfont icon-gengduo1"></i></a>
+          </div>
+          <div class="nodata">
+			<svg class="icon fz_100" aria-hidden="true">
+              <use xlink:href="#icon-wuhuodong"></use>
+            </svg>
+            <div class="pa15">暂无活动</div>
+          </div>
+        </div>
+        <!--冷启动over-->
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script src="../iconfont/ncolor/iconfont.js"></script> 
+<script src="../js/plug-in/echarts/echarts.common.min.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","data_v"]
+ ,function(j,b,n,data_v){
+	 opt.navli_j[0].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+});
+
+</script>
+</body>
+</html>
