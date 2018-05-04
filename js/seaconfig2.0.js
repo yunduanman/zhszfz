@@ -59,11 +59,8 @@ var opt={
 	navli_j:[
 			{name:"首页",attrcont:"href='01index.html'",isactive:false},
 			{name:"学生评价",attrcont:"href='02index_pj.html'",isactive:false},
-			{name:"学业水平",attrcont:"href='03index_xy.html'",isactive:false},
-			{name:"身心健康",attrcont:"href='04index_jk.html'",isactive:false},
-			{name:"艺术素养",attrcont:"href='05index_ys.html'",isactive:false},
-			{name:"社会实践",attrcont:"href='06index_sj.html'",isactive:false},
-			{name:"成长档案袋",attrcont:"href='07index_da.html'",isactive:false},
+			{name:"成长档案",attrcont:"href='07index_da.html'",isactive:false},
+			{name:"应用中心",attrcont:"href=''",isactive:false},
 	]
 }
 

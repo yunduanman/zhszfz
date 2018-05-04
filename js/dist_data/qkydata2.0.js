@@ -7,7 +7,7 @@ define({
 	navdata:{/*导航数据*/
 	    htmlsrc:"../mould_html/qkynav2.0.html",//头部模板获取异步地址
 		logosrc:"../images/nav_logo/logo.png",//logo来源路径
-		pjname:"学生综合素质评价",//应用名
+		pjname:"学生综合素质发展",//应用名
 		theme:"navbar-default",//主题
 		themetype:{
 			pjnameColor:"#21a2db",//应用名颜色
@@ -17,11 +17,8 @@ define({
 		navli_j:[
 			{name:"首页",attrcont:"href='01index.html'",isactive:false},
 			{name:"学生评价",attrcont:"href='02index_pj.html'",isactive:false},
-			{name:"学业水平",attrcont:"href='03index_xy.html'",isactive:false},
-			{name:"身心健康",attrcont:"href='04index_jk.html'",isactive:false},
-			{name:"艺术素养",attrcont:"href='05index_ys.html'",isactive:false},
-			{name:"社会实践",attrcont:"href='06index_sj.html'",isactive:false},
-			{name:"成长档案袋",attrcont:"href='07index_da.html'",isactive:false},
+			{name:"成长档案",attrcont:"href='07index_da.html'",isactive:false},
+			{name:"应用中心",attrcont:"href=''",isactive:false},
 		],//主导航条
 		
 		morebtn:true,//是否显示最左汉堡包菜单建已经是否执行更多操作

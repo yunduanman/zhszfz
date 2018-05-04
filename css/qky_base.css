@@ -545,6 +545,9 @@ padding:10px;}
 
 /*用户信息*/
 .div-user{ background-image:url(../images/user-bg.jpg); background-size:100% 100%;}
+.table-db th{ min-width:60px;}
+.table-db td{ min-width:70px;}
+
 /*左侧菜单*/
 .side-menu{ min-height:500px;}
 .smenu-bg{ background-image:url(../images/side-l-bg.jpg); background-position:bottom center; background-repeat: no-repeat; background-size:100% auto;}
@@ -557,7 +560,7 @@ padding:10px;}
 .side-menu .ul-menu:last-child{ border-bottom:none;}
 .side-menu .ul-menu .active{ background:#f2f8fd; border-left:3px solid #199ed8;}
 /*工作进度*/
-.progress-nav .progress-sign{font-style:inherit;width:22px; text-align:center; height:22px; border-radius:50%; background:#fff; color:#fff; line-height:18px; margin:0 auto;border:3px solid #e0e0e0;}
+.progress-nav .progress-sign{font-style:inherit;width:20px; text-align:center; height:20px; border-radius:50%; background:#fff; color:#fff; line-height:16px; margin:0 auto;border:3px solid #e0e0e0;}
 .progress-nav .progress-sign:before,.progress-nav .progress-sign:after{ content: " ";position: absolute;  width:46%; top:10px; border-top:3px solid #e0e0e0; -webkit-transform-origin: 0 0;  transform-origin: 0 0; -webkit-transform: scaleY(.5); transform: scaleY(.5);}
 .progress-nav .progress-sign:before{left: 0;}
 .progress-nav .progress-sign:after{right:0;}
@@ -586,7 +589,8 @@ padding:10px;}
 .line-2{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
 
 /*动态*/
-.dynamic{ padding:15px 15px 15px 70px; min-height:75px;}
+.dynamic{ padding:20px 15px 20px 70px; min-height:75px;}
+.dynamic.bor-b:last-child{ border-bottom:none;}
 
 /*创建体系*/
 .table.hei100 tbody,.table.hei100 tr,.table.hei100 td{ height:100%;}
