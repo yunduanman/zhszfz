@@ -549,10 +549,21 @@ padding:10px;}
 .table-db td{ min-width:70px;}
 
 /*左侧菜单*/
+@media (min-width: 768px){
+.side-menu{ min-height:300px;}
+.modal-body .side-menu{ min-height:250px;}
+.members{ max-height:190px; overflow-y:auto;}
+}
+@media (min-width: 992px){
 .side-menu{ min-height:500px;}
+.modal-body .side-menu{ min-height:420px;}
+.members{ max-height:370px; overflow-y:auto}
+}
 .smenu-bg{ background-image:url(../images/side-l-bg.jpg); background-position:bottom center; background-repeat: no-repeat; background-size:100% auto;}
 @media (min-width: 1600px) {
 	.side-menu{ min-height:620px;}
+	.modal-body .side-menu{ min-height:480px;}
+	.members{ max-height:430px; overflow-y:auto}
 }
 .side-menu .ul-menu{ border-bottom:1px solid #ececec;}
 .side-menu .ul-menu li{ padding-left:20px; padding-right:15px;}
@@ -653,3 +664,6 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 
 /*学生-你需要做*/
 .step-stu{ position:relative; display:block; max-width:100%;-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);box-shadow: 0 5px 10px rgba(0, 0, 0, .05);}
+
+/*搜索*/
+.div-srh{width:150px;}

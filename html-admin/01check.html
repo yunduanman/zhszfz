@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container po_r mt15">
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 clear">
+      <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei mr5 co_93"></i>首页<i class="iconfont icon-gengduo1 mr5"></i>用户权限</div>
+      <a href="01index.html" class="fr co_63"><i class="iconfont icon-zuo"></i>返回首页</a>
+    </div>
+    <div class="ma15 pl10 clear fz_15 bor-lb">学校管理员<span class="co_93 fz_13">（可设置审核小组成员）</span></div>
+    <div class="row pa15 ma0 text-center">
+      <div class="col-sm-2">
+        <img src="../images/teacher.jpg" class="img-110 radius-4">
+        <div class="mt10">黄晓明</div>
+      </div>
+      <div class="col-sm-2">
+        <img src="../images/teacher.jpg" class="img-110 radius-4">
+        <div class="mt10">黄晓明</div>
+      </div>
+      <div class="col-sm-2">
+        <img src="../images/teacher.jpg" class="img-110 radius-4">
+        <div class="mt10">黄晓明</div>
+      </div>
+    </div>
+    <div class="ma15 pl10 clear bor-lb">
+      <div class="col-sm-6 fz_15 pa0">审核小组成员<span class="co_93 fz_13">（学校管理员和审核小组成员，才能对学生评价-申报数据进行审核。）</span></div>
+      <div class="col-sm-6 pa0 text-right">
+        <a type="" class="btn btn-default fr"  data-toggle="modal" data-target="#add2"><i class="iconfont icon-zengjia fz_14 mr5"></i>添加</a>
+        <div class="col-sm-6 fr has-feedback">
+          <input type="text" class="form-control" placeholder="姓名搜索">
+          <a class="iconfont icon-sousuo3 form-control-feedback mr15" aria-hidden="true"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="table-responsive _sm pl15 pr15">
+      <table class="table table-striped">
+       <thead>
+        <tr>
+          <th scope="col">成员</th>
+          <th scope="col">部门</th>
+          <th scope="col">角色</th>
+          <th scope="col">手机号</th>
+          <th scope="col">设置人</th>
+          <th scope="col">设置时间</th>
+          <th scope="col">操作</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+          <td>陈楚河</td>
+          <td>全课云产品组</td>
+          <td>班主任</td>
+          <td>15311112222</td>
+          <td>黄晓明</td>
+          <td>2018-04-25</td>
+          <td><a href="#" class="iconfont icon-shanchu" title="移除"></a></td>
+        </tr>
+        <tr>
+          <td>王珂</td>
+          <td>全课云产品组</td>
+          <td>教师</td>
+          <td>18355556666</td>
+          <td>黄晓明</td>
+          <td>2018-04-28</td>
+          <td><a href="#" class="iconfont icon-shanchu" title="移除"></a></td>
+         </tr>
+        <tr>
+          <td>文琪</td>
+          <td>全课云产品组</td>
+          <td>教师</td>
+          <td>13652526565</td>
+          <td>黄晓明</td>
+          <td>2018-05-01</td>
+          <td><a href="#" class="iconfont icon-shanchu" title="移除"></a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="qkypage  page_center pt15 pb15"> 
+      <ul class="nav nav-pills"> 
+          <li class="disabled page_prv"><a href="#">上一页</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="page_next"><a href="#">下一页</a></li>
+          <li class="form-group mb0 page_input pt9"><input type="text" class="form-control" placeholder="输入页面"></li>
+          <li class="page_input"><a class="btn btn-default">GO</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="add2" tabindex="-1" role="dialog" aria-labelledby="add2Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">添加审核人员</h4>
+				
+			</div>
+			<div class="modal-body clear pa0 bor-b">
+              <div class="col-sm-3 pa0 bor-r">
+                <div class="side-menu">
+                  <ul class="ul-menu">
+                    <li class="active">
+                      <a href="" class="line-2 co_33 pa15">校长组</a>
+                    </li>
+                    <li>
+                      <a href="" class="line-2 co_33 pa15">语文组</a>
+                    </li>
+                    <li>
+                      <a href="" class="line-2 co_33 pa15">数学组</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="col-sm-9 pa0">
+                <div class="bor-bgray pa15 clear">
+                  <label class="checkbox-qky parent fz_nwe fr" lj="checkbox_grader" isc="no"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>选择全部</label>
+                </div>
+                <div class="row ml0 mr0 pt15 pb15 members">
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                  <div class="col-sm-3 mb10">
+                    <label class="checkbox-qky child fz_nwe" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a>李芬芳</label>
+                  </div>
+                </div>
+              </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","rach","datep"]
+ ,function(j,b,n,dw,rach,datep){
+	 opt.navli_j[0].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
+});
+
+</script>
+</body>
+</html>

@@ -24,8 +24,9 @@
       <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei mr5 co_93"></i>首页<i class="iconfont icon-gengduo1 mr5"></i>学期设置</div>
       <a href="01index.html" class="fr co_63"><i class="iconfont icon-zuo"></i>返回首页</a>
     </div>
-    <div class="pa15 text-right">
-      <a type="" class="btn btn-default"><i class="iconfont icon-zengjia fz_14 mr5"></i>新增学年学期</a>
+    <div class="pa15 clear">
+      <div class="fl text-warning pt5">学期结束后，将无法修改开始与结束时间；学期时间内，只允许修改结束时间；为了不影响评价数据，请管理员谨慎设置。</div>
+      <a type="" class="btn btn-default fr"  data-toggle="modal" data-target="#add1"><i class="iconfont icon-zengjia fz_14 mr5"></i>新增学年学期</a>
     </div>
     <div class="table-responsive _sm pl15 pr15">
       <table class="table table-striped">
@@ -141,14 +142,78 @@
 </div>
 <div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
 
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="add1" tabindex="-1" role="dialog" aria-labelledby="add1Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">新增学年学期</h4>
+				
+			</div>
+			<div class="modal-body">
+               <form class="form-horizontal pt20 pl10">
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pt5 pl0 pr0">学年</label>
+                    <div class="col-sm-9">
+                      <div class="dropdown qkydropdown havechoose">
+                        <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                          <span class="value">全部学年</span>
+                          <span class="iconfont icon-xia"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a title="全部学年">全部学年</a></li>
+                          <li role="presentation"><a title="2016-2017学年">2016-2017学年</a></li>
+                          <li role="presentation"><a title="2016-2017学年">2016-2017学年</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pt5 pl0 pr0">学期</label>
+                    <div class="col-sm-9">
+                      <div class="radio pt0">
+                       <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a>第一学期</label>
+                       <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a>第二学期</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pt5 pl0 pr0">开始时间</label>
+                    <div class="col-sm-9 has-feedback">
+                       <input type="text" class="form-control" placeholder="开始时间" onclick="WdatePicker()">
+                       <span class="form-control-feedback mr5" aria-hidden="true"><i class="iconfont icon-rili1 co_93"></i></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 text-right pt5 pl0 pr0">结束时间</label>
+                    <div class="col-sm-9 has-feedback">
+                       <input type="text" class="form-control" placeholder="开始时间" onclick="WdatePicker()">
+                       <span class="form-control-feedback mr5" aria-hidden="true"><i class="iconfont icon-rili1 co_93"></i></span>
+                    </div>
+                  </div>
+                  
+                </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 
 <script>
- seajs.use(["jq","bs","nav"]
- ,function(j,b,n){
+ seajs.use(["jq","bs","nav","dw","rach","datep"]
+ ,function(j,b,n,dw,rach,datep){
 	 opt.navli_j[0].isactive=true;
 	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
 });
 
 </script>
