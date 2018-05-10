@@ -549,21 +549,23 @@ padding:10px;}
 .table-db td{ min-width:70px;}
 
 /*左侧菜单*/
+.members{overflow-y:auto}
+
 @media (min-width: 768px){
 .side-menu{ min-height:300px;}
 .modal-body .side-menu{ min-height:250px;}
-.members{ max-height:190px; overflow-y:auto;}
+.members{height:230px;}
 }
 @media (min-width: 992px){
 .side-menu{ min-height:500px;}
 .modal-body .side-menu{ min-height:420px;}
-.members{ max-height:370px; overflow-y:auto}
+.members{height:400px;}
 }
 .smenu-bg{ background-image:url(../images/side-l-bg.jpg); background-position:bottom center; background-repeat: no-repeat; background-size:100% auto;}
 @media (min-width: 1600px) {
 	.side-menu{ min-height:620px;}
 	.modal-body .side-menu{ min-height:480px;}
-	.members{ max-height:430px; overflow-y:auto}
+	.members{height:455px;}
 }
 .side-menu .ul-menu{ border-bottom:1px solid #ececec;}
 .side-menu .ul-menu li{ padding-left:20px; padding-right:15px;}

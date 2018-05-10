@@ -66,7 +66,7 @@ var option = {
         axisPointer: {type: 'cross'}
     },
 	legend: {
-        data:['上报量','完成率'],
+        data:['上报量','通过率'],
         align: 'right',
         right: 15,
         top:0,
@@ -139,7 +139,7 @@ var option = {
         },
         
         {
-        name:'完成率',
+        name:'通过率',
          color: '#66d282',
          yAxisIndex: 1,
             type:'line',
