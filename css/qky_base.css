@@ -552,7 +552,7 @@ padding:10px;}
 .table-db td{ min-width:70px;}
 
 /*左侧菜单*/
-.members{overflow-y:auto}
+.members{overflow-y:auto;overflow-x: hidden;}
 
 @media (min-width: 768px){
 .side-menu{ min-height:300px;}

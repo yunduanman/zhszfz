@@ -9,6 +9,7 @@
 .fr{ float:right !important;}
 .clear:before,.clear:after{ content: " "; display: table;}
 .clear:after {clear: both;}
+.pointer{ cursor:pointer;}
 .po_r{ position:relative;}
 .po_ab{ position:absolute; top:0; left:0;}
 .po_ab_r{ position:absolute; top:0; right:0}

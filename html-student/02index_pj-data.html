@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质发展</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="menu-n2 bg-gray">
+  <ul class="container">
+    <li><a href="02index_pj.html">评价申报</a></li>
+    <li><a href="02index_pj-data.html" class="active">数据自查</a></li>
+  </ul>
+</div>
+<div class="container mt15">
+  <div class="qkycadr mb15">
+    <div class="tab" role="tabpanel">
+      <!-- Nav tabs -->
+      <div class="nav nav-tabs">
+        <ul class="fl" role="tablist">
+          <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">已退回（15）</a></li>
+          <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">待审核</a></li>
+          <li role="presentation"><a href="#Section3" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">已通过（21）</a></li>
+          <li role="presentation"><a href="#Section4" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">学校录入（1021）</a></li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content tabs">
+        <div role="tabpanel" class="tab-pane fade" id="Section2">
+          <form class="form-horizontal">
+            <div class="row pa15">
+              <div class="col-sm-10 col-lg-11 pr0">
+                <div class="col-sm-4 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">学年学期</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部学期">全部学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">评价指标</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部指标">全部指标</a></li>
+                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2 col-lg-1 text-right pl0">
+                <a href="01creat01.html" class="btn btn-primary"><i class="iconfont icon-sousuo3 fz_14 mr5"></i>搜索</a>
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive _sm pl15 pr15">
+            <table class="table table-striped">
+             <thead>
+              <tr>
+                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th scope="col">申报指标</th>
+                <th scope="col">申报班级</th>
+                <th scope="col">申报对象</th>
+                <th scope="col">分值</th>
+                <th scope="col">申报人</th>
+                <th scope="col">操作</th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a href="02index_pj-appeal.html" class="iconfont icon-zidingyiyemian" title="申诉"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a href="02index_pj-appeal.html" class="iconfont icon-zidingyiyemian" title="申诉"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a href="02index_pj-appeal.html" class="iconfont icon-zidingyiyemian" title="申诉"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qkypage  page_center pt15 pb15"> 
+            <ul class="nav nav-pills"> 
+                <li class="disabled page_prv"><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="page_next"><a href="#">下一页</a></li>
+                <li class="form-group mb0 page_input pt9"><input type="text" class="form-control" placeholder="输入页面"></li>
+                <li class="page_input"><a class="btn btn-default">GO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+          <form class="form-horizontal">
+            <div class="row pa15">
+              <div class="col-sm-10 col-lg-11 pr0">
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">学年学期</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部学期">全部学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">评价指标</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部指标">全部指标</a></li>
+                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择年级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部年级">全部年级</a></li>
+                      <li role="presentation"><a title="一年级">一年级</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择班级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部班级">全部班级</a></li>
+                      <li role="presentation"><a title="（1）班">（1）班</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-sm-2 col-lg-1 text-right pl0">
+                <a href="01creat01.html" class="btn btn-primary"><i class="iconfont icon-sousuo3 fz_14 mr5"></i>搜索</a>
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive _sm pl15 pr15">
+            <table class="table table-striped">
+             <thead>
+              <tr>
+                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th scope="col">申报指标</th>
+                <th scope="col">申报班级</th>
+                <th scope="col">申报对象</th>
+                <th scope="col">分值</th>
+                <th scope="col">申报人</th>
+                <th scope="col">操作</th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+               <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+               <td>一级指标 - 二级指标</td>
+               <td>初一(1)班</td>
+               <td>黄晓明</td>
+               <td><span class="text-success">+5</span></td>
+               <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qkypage  page_center pt15 pb15"> 
+            <ul class="nav nav-pills"> 
+                <li class="disabled page_prv"><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="page_next"><a href="#">下一页</a></li>
+                <li class="form-group mb0 page_input pt9"><input type="text" class="form-control" placeholder="输入页面"></li>
+                <li class="page_input"><a class="btn btn-default">GO</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Section3">
+          <form class="form-horizontal">
+            <div class="row pa15">
+              <div class="col-sm-10 col-lg-11 pr0">
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">学年学期</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部学期">全部学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">评价指标</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部指标">全部指标</a></li>
+                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-2 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择年级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部年级">全部年级</a></li>
+                      <li role="presentation"><a title="一年级">一年级</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-2 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择班级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部班级">全部班级</a></li>
+                      <li role="presentation"><a title="（1）班">（1）班</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-sm-2 col-lg-1 text-right pl0">
+                <a href="01creat01.html" class="btn btn-primary"><i class="iconfont icon-sousuo3 fz_14 mr5"></i>搜索</a>
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive _sm pl15 pr15">
+            <table class="table table-striped">
+             <thead>
+              <tr>
+                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th scope="col">申报指标</th>
+                <th scope="col">申报班级</th>
+                <th scope="col">申报对象</th>
+                <th scope="col">分值</th>
+                <th scope="col">申报人</th>
+                <th scope="col">操作</th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qkypage  page_center pt15 pb15"> 
+            <ul class="nav nav-pills"> 
+                <li class="disabled page_prv"><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="page_next"><a href="#">下一页</a></li>
+                <li class="form-group mb0 page_input pt9"><input type="text" class="form-control" placeholder="输入页面"></li>
+                <li class="page_input"><a class="btn btn-default">GO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Section4">
+          <form class="form-horizontal">
+            <div class="row pa15">
+              <div class="col-sm-10 col-lg-11 pr0">
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">学年学期</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部学期">全部学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度度第二学期">2016-2017学年度度第二学期</a></li>
+                      <li role="presentation"><a title="2016-2017学年度第一学期">2016-2017学年度第一学期</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">评价指标</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部指标">全部指标</a></li>
+                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-2 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择年级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部年级">全部年级</a></li>
+                      <li role="presentation"><a title="一年级">一年级</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-2 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">选择班级</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部班级">全部班级</a></li>
+                      <li role="presentation"><a title="（1）班">（1）班</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-sm-2 col-lg-1 text-right pl0">
+                <a href="01creat01.html" class="btn btn-primary"><i class="iconfont icon-sousuo3 fz_14 mr5"></i>搜索</a>
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive _sm pl15 pr15">
+            <table class="table table-striped">
+             <thead>
+              <tr>
+                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th scope="col">申报指标</th>
+                <th scope="col">申报班级</th>
+                <th scope="col">申报对象</th>
+                <th scope="col">分值</th>
+                <th scope="col">申报人</th>
+                <th scope="col">操作</th>
+              </tr>
+             </thead>
+             <tbody>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+              </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="error_color">-3</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              <tr>
+                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
+                <td>一级指标 - 二级指标</td>
+                <td>初一(1)班</td>
+                <td>黄晓明</td>
+                <td><span class="text-success">+5</span></td>
+                <td>陈薇影 学生</td>
+                <td><a class="iconfont icon-chakan" title="查看"></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="qkypage  page_center pt15 pb15"> 
+            <ul class="nav nav-pills"> 
+                <li class="disabled page_prv"><a href="#">上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="page_next"><a href="#">下一页</a></li>
+                <li class="form-group mb0 page_input pt9"><input type="text" class="form-control" placeholder="输入页面"></li>
+                <li class="page_input"><a class="btn btn-default">GO</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script src="../iconfont/ncolor/iconfont.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","rach"]
+ ,function(j,b,n,dw,rach){
+	 opt.navli_j[1].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
+});
+
+</script>
+</body>
+</html>

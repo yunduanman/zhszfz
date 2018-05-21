@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质发展</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container mt15">
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 clear">
+      <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei co_93 mr5"></i>按学生评价<i class="iconfont icon-gengduo1 mr5"></i>评价录入</div>
+      <div class="fr"><a href="02index_pj.html" class="co_63"><i class="iconfont icon-zuo"></i>返回</a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7 pr0">
+        <form class="form-horizontal pt15 mt15">
+            <div class="form-group">
+              <label class="col-sm-2 text-right pl0 pr0">学年学期</label>
+              <div class="col-sm-4">2018-2019学年学期</div>
+              <label class="col-sm-2 text-right pl0 pr0">评价班级</label>
+              <div class="col-sm-4">一年级（1）班</div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 text-right pl0 pr0"><strong class="error_color">*</strong>评价指标</label>
+              <div class="col-sm-4">思想品德 - 思想素养</div>
+              <label class="col-sm-2 text-right pl0 pr0">评价学生</label>
+              <div class="col-sm-4">艾小雅</div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 text-right pt5 pl0 pr0"><strong class="error_color">*</strong>评价时间</label>
+              <div class="col-sm-8 has-feedback">
+                 <input type="text" class="form-control" placeholder="评价时间" onclick="WdatePicker()">
+                 <span class="form-control-feedback mr5" aria-hidden="true"><i class="iconfont icon-rili1 co_93"></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 text-right pt5 pl0 pr0">行为地点</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" required placeholder="填写行为地点" value="">
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="col-sm-5">
+        <div class="bg-gray radius-4 pa15">
+          <h4>指标观测点</h4>
+          <p>1.担任班团队、社团等班级及以上学生干部或在服务集体方面有突出表现；</p>
+          <p>2.积极参加学校升国旗等爱国主义仪式、国防教育等活动，并参观爱国主义教育基地；</p>
+          <p>3.获得校级及以上三好学生、优秀少先队员、优秀团员、优秀学生干部等德育类或综合类荣誉称号；</p>
+          <p>4.参加公益活动、志愿者活动、社区服务等累计24小时及以上。</p>
+          <p>5.无违法行为，未受到学校纪律处分。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="qkycadr mb15">
+    
+    <div class="tab" role="tabpanel">
+      <!-- Nav tabs -->
+      <div class="nav nav-tabs">
+        <ul class="fl" role="tablist">
+          <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">减分标签</a></li>
+          <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">加分标签</a></li>
+          
+        </ul>
+        <div class="fr pt15 pr15 text-warning">以下标签为学校管理员设置，提供学生评价参考。</div>
+        
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content tabs">
+        <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+          <div class="row ma0 pt15">
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">上课期间随意打闹</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">升国旗仪式缺席1次</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">没完成作业</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Section2">
+          <div class="row ma0 pt15">
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">上课期间表现良好</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">上课期间表现良好</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="alert alert-warning clear" role="alert">
+                <div class="col-sm-10 pa0">完成作业</div>
+                <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 clear">
+      <div class="fz_16 pl10 bor-lb">评价区域<span class="fz_14 co_93">（点击标签即可将评价文字与分值写入“描述/评语”与“评分”中，并可根据情况修改。）</span></div>
+      
+    </div>
+    <form class="form-horizontal pt15 mt15">
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5 pl0 pr0"><strong class="error_color">*</strong>上传附件</label>
+        <div class="col-sm-6 has-feedback">
+          <div class="input-group">
+            <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+            <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+            <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+          </div>
+        </div>
+        <div class="col-sm-3 pl0 pt5 co_93">（支持文档与图片格式）</div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5 pl0 pr0">描述/评语</label>
+        <div class="col-sm-6">
+          <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+        </div>
+        <div class="col-sm-2 pl0">
+          <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评分"></textarea>
+        </div>
+      </div>
+    </form>
+    
+    <div class="page-header"></div>
+    <div class="form-group row mb20">
+      <div class="col-sm-12 text-center">
+        <a href="02index_pj.html" class="btn btn-primary">保存提交</a>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script src="../iconfont/ncolor/iconfont.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","datep"]
+ ,function(j,b,n,dw,datep){
+	 opt.navli_j[1].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+});
+
+</script>
+</body>
+</html>
