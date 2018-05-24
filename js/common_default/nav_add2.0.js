@@ -45,6 +45,7 @@ define(function(require) {
 					$(".nav_logo img").attr("src",opts.logosrc);
 					$(".nav_pjname").html(opts.pjname);
 					$(".nav_pjname").css("color",opts.themetype.pjnameColor);
+					$(".school_name").html(opts.tea_info.school);
 					$(".other_name").html(opts.tea_info.name);
 					
 					//1.1主导航渲染
