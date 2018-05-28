@@ -30,15 +30,15 @@
       <!-- Nav tabs -->
       <div class="nav nav-tabs">
         <ul class="fl" role="tablist">
-          <li role="presentation"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">待审核</a></li>
+          <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">待审核</a></li>
           <li role="presentation"><a href="#Section3" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">已通过（21）</a></li>
           <li role="presentation"><a href="#Section2" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">已退回（15）</a></li>
-          <li role="presentation" class="active"><a href="#Section4" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">学校录入（1021）</a></li>
+          <li role="presentation"><a href="#Section4" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">学校录入（1021）</a></li>
         </ul>
       </div>
       <!-- Tab panes -->
       <div class="tab-content tabs">
-        <div role="tabpanel" class="tab-pane fade" id="Section1">
+        <div role="tabpanel" class="tab-pane fade in active" id="Section1">
           <form class="form-horizontal">
             <div class="row pa15">
               <div class="col-sm-10 col-lg-11 pr0">
@@ -60,39 +60,28 @@
                 <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">评价指标</span>
+                      <span class="value">一级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部指标">全部指标</a></li>
-                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                      <li role="presentation"><a title="全部一级指标">全部一级指标</a></li>
+                      <li role="presentation"><a title="思想品德">思想品德</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择年级</span>
+                      <span class="value">二级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部年级">全部年级</a></li>
-                      <li role="presentation"><a title="一年级">一年级</a></li>
+                      <li role="presentation"><a title="全部二级指标">全部二级指标</a></li>
+                      <li role="presentation"><a title="思想品德二级指标">思想品德二级指标</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-3 pl0">
-                  <div class="dropdown qkydropdown havechoose">
-                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择班级</span>
-                      <span class="iconfont icon-xia"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部班级">全部班级</a></li>
-                      <li role="presentation"><a title="（1）班">（1）班</a></li>
-                    </ul>
-                  </div>
-                </div>
+                <div class="col-sm-2 pl0 pt5">班级：初一（1）班</div>
                 
               </div>
               <div class="col-sm-2 col-lg-1 text-right pl0">
@@ -105,11 +94,10 @@
              <thead>
               <tr>
                 <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
-                <th scope="col">申报指标</th>
-                <th scope="col">申报班级</th>
-                <th scope="col">申报对象</th>
-                <th scope="col">分值</th>
-                <th scope="col">申报人</th>
+                <th width="21%" scope="col">申报指标</th>
+                <th width="42%" scope="col">申报内容</th>
+                <th width="8%" scope="col">分值</th>
+                <th width="10%" scope="col">申报人</th>
                 <th scope="col">操作</th>
               </tr>
              </thead>
@@ -117,8 +105,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -126,8 +113,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -135,17 +121,15 @@
               <tr>
                <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                <td>一级指标 - 二级指标</td>
-               <td>初一(1)班</td>
-               <td>黄晓明</td>
+               <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                <td><span class="text-success">+5</span></td>
                <td>陈薇影 学生</td>
-                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
+               <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
                 </tr>
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -153,8 +137,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -162,8 +145,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -171,8 +153,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -180,8 +161,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-chexiao" title="放弃申报"></a></td>
@@ -225,39 +205,28 @@
                 <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">评价指标</span>
+                      <span class="value">一级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部指标">全部指标</a></li>
-                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                      <li role="presentation"><a title="全部一级指标">全部一级指标</a></li>
+                      <li role="presentation"><a title="思想品德">思想品德</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-2 pl0">
+                <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择年级</span>
+                      <span class="value">二级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部年级">全部年级</a></li>
-                      <li role="presentation"><a title="一年级">一年级</a></li>
+                      <li role="presentation"><a title="全部二级指标">全部二级指标</a></li>
+                      <li role="presentation"><a title="思想品德二级指标">思想品德二级指标</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-2 pl0">
-                  <div class="dropdown qkydropdown havechoose">
-                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择班级</span>
-                      <span class="iconfont icon-xia"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部班级">全部班级</a></li>
-                      <li role="presentation"><a title="（1）班">（1）班</a></li>
-                    </ul>
-                  </div>
-                </div>
+                <div class="col-sm-2 pl0 pt5">班级：初一（1）班</div>
                 
               </div>
               <div class="col-sm-2 col-lg-1 text-right pl0">
@@ -270,12 +239,11 @@
              <thead>
               <tr>
                 <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
-                <th scope="col">申报指标</th>
-                <th scope="col">申报班级</th>
-                <th scope="col">申报对象</th>
-                <th scope="col">分值</th>
-                <th scope="col">申报人</th>
-                <th scope="col">审核人</th>
+                <th width="21%" scope="col">申报指标</th>
+                <th width="42%" scope="col">申报内容</th>
+                <th width="8%" scope="col">分值</th>
+                <th width="10%" scope="col">申报人</th>
+                <th width="10%" scope="col">审核人</th>
                 <th scope="col">操作</th>
               </tr>
              </thead>
@@ -283,8 +251,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
@@ -293,8 +260,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
@@ -303,8 +269,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
@@ -331,7 +296,7 @@
           <form class="form-horizontal">
             <div class="row pa15">
               <div class="col-sm-10 col-lg-11 pr0">
-                <div class="col-sm-4 pl0">
+                <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
                       <span class="value">学年学期</span>
@@ -346,15 +311,27 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-4 pl0">
+                <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">评价指标</span>
+                      <span class="value">一级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部指标">全部指标</a></li>
-                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                      <li role="presentation"><a title="全部一级指标">全部一级指标</a></li>
+                      <li role="presentation"><a title="思想品德">思想品德</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 pl0">
+                  <div class="dropdown qkydropdown havechoose">
+                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      <span class="value">二级指标</span>
+                      <span class="iconfont icon-xia"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a title="全部二级指标">全部二级指标</a></li>
+                      <li role="presentation"><a title="思想品德二级指标">思想品德二级指标</a></li>
                     </ul>
                   </div>
                 </div>
@@ -368,22 +345,20 @@
             <table class="table table-striped">
              <thead>
               <tr>
-                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
-                <th scope="col">申报指标</th>
-                <th scope="col">申报班级</th>
-                <th scope="col">申报对象</th>
-                <th scope="col">分值</th>
-                <th scope="col">申报人</th>
-                <th scope="col">审核人</th>
-                <th scope="col">操作</th>
+                <th width="3%" scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th width="21%" scope="col">申报指标</th>
+                <th width="42%" scope="col">申报内容</th>
+                <th width="8%" scope="col">分值</th>
+                <th width="10%" scope="col">申报人</th>
+                <th width="10%" scope="col">审核人</th>
+                <th width="6%" scope="col">操作</th>
               </tr>
              </thead>
              <tbody>
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
@@ -392,8 +367,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
@@ -402,8 +376,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
@@ -426,7 +399,7 @@
             </ul>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade in active" id="Section4">
+        <div role="tabpanel" class="tab-pane fade" id="Section4">
           <form class="form-horizontal">
             <div class="row pa15">
               <div class="col-sm-10 col-lg-11 pr0">
@@ -448,39 +421,28 @@
                 <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">评价指标</span>
+                      <span class="value">一级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部指标">全部指标</a></li>
-                      <li role="presentation"><a title="思想品德-思想品德">思想品德-思想品德</a></li>
+                      <li role="presentation"><a title="全部一级指标">全部一级指标</a></li>
+                      <li role="presentation"><a title="思想品德">思想品德</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-2 pl0">
+                <div class="col-sm-3 pl0">
                   <div class="dropdown qkydropdown havechoose">
                     <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择年级</span>
+                      <span class="value">二级指标</span>
                       <span class="iconfont icon-xia"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部年级">全部年级</a></li>
-                      <li role="presentation"><a title="一年级">一年级</a></li>
+                      <li role="presentation"><a title="全部二级指标">全部二级指标</a></li>
+                      <li role="presentation"><a title="思想品德二级指标">思想品德二级指标</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-2 pl0">
-                  <div class="dropdown qkydropdown havechoose">
-                    <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                      <span class="value">选择班级</span>
-                      <span class="iconfont icon-xia"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a title="全部班级">全部班级</a></li>
-                      <li role="presentation"><a title="（1）班">（1）班</a></li>
-                    </ul>
-                  </div>
-                </div>
+                <div class="col-sm-2 pl0 pt5">班级：初一（1）班</div>
                 
               </div>
               <div class="col-sm-2 col-lg-1 text-right pl0">
@@ -492,22 +454,20 @@
             <table class="table table-striped">
              <thead>
               <tr>
-                <th scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
-                <th scope="col">申报指标</th>
-                <th scope="col">申报班级</th>
-                <th scope="col">申报对象</th>
-                <th scope="col">分值</th>
-                <th scope="col">申报人</th>
-                <th scope="col">录入人</th>
-                <th scope="col">操作</th>
+                <th width="5%" scope="col"><label class="checkbox-qky parent" lj="checkbox_grader" isc="no"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></th>
+                <th width="19%" scope="col">申报指标</th>
+                <th width="41%" scope="col">申报内容</th>
+                <th width="8%" scope="col">分值</th>
+                <th width="12%" scope="col">申报人</th>
+                <th width="8%" scope="col">录入人</th>
+                <th width="7%" scope="col">操作</th>
               </tr>
              </thead>
              <tbody>
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
@@ -516,8 +476,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
@@ -526,8 +485,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
@@ -536,8 +494,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
@@ -546,8 +503,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
@@ -556,8 +512,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
@@ -566,8 +521,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
@@ -576,8 +530,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
@@ -586,8 +539,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
@@ -596,8 +548,7 @@
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
                 <td>一级指标 - 二级指标</td>
-                <td>初一(1)班</td>
-                <td>黄晓明</td>
+                <td>在石家庄市第26届武术比赛中获得少年组器械一等奖；今年，在石家庄市第27届武术套路比赛中获得少年组器械春秋大刀一等奖，同时获得六人春秋大刀集体一等奖。</td>
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈克强</td>
