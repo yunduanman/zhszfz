@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质发展</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/qkyicon/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="qkybody">
+<div id="qkynav"></div>
+<div class="container mt15">
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 clear">
+      <div class="fl fz_16 co_33"><i class="iconfont icon-dingwei co_93 mr5"></i>按指标评价<i class="iconfont icon-gengduo1 mr5"></i>开始评价</div>
+      <div class="fr"><a href="02index_pj-quota.html" class="co_63"><i class="iconfont icon-zuo"></i>返回</a></div>
+    </div>
+    <div class="row">
+      <form class="form-horizontal mt15">
+        <div class="form-group">
+          <label class="col-sm-2 text-right pl0 pr0">评价指标</label>
+          <div class="col-sm-8">思想品德 - 思想素养</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 text-right pl0 pr0">指标说明</label>
+          <div class="col-sm-8">学生爱党爱国、坚持理想信念以及团结合作等方面的思想和行为表现，组织参与班团队、学校社团、社区活动及其他相关活动的情况，记录参加活动次数、承担角色、持续时间、主要表现或成果等。</div>
+        </div>
+          
+        <div class="form-group">
+          <label class="col-sm-2 text-right pt5 pl0 pr0"><strong class="error_color">*</strong>评价时间</label>
+          <div class="col-sm-8 has-feedback">
+             <input type="text" class="form-control" placeholder="评价时间" onclick="WdatePicker()">
+             <span class="form-control-feedback mr5" aria-hidden="true"><i class="iconfont icon-rili1 co_93"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 text-right pt5 pl0 pr0">行为地点</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" required placeholder="填写行为地点" value="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 mb15 clear">
+      <div class="fl"><a type="" class="btn btn-default" data-toggle="modal" data-target="#addstudents"><i class="iconfont icon-zengjia fz_14 mr5"></i>添加学生</a></div>
+      <div class="fr"><a href="" class="mr15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>批量评价标签</a><a href="" class="mr15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a><a href="" class="btn btn-primary"><i class="iconfont icon-finish fz_14 mr5"></i>提交评价</a></div>
+    </div>
+    <div class="table-responsive _sm pl15 pr15 pb15">
+      <table class="table">
+        <tr>
+          <th width="12%" rowspan="2" scope="row" class=" bg-info">
+           <div class="text-center fz_nwe">
+            <img src="../images/teacher.jpg" class="img-60 bor-fff">
+            <div class="mt10">张少池</div>
+            <div>初一(1)班</div>
+           </div>
+          </th>
+          <td width="8%"><label class="text-right pt5 fz_nwe">上传附件</label></td>
+          <td width="80%">
+           <div class="form-group">
+              <div class="col-sm-6 has-feedback pl0">
+                <div class="input-group">
+                  <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+                  <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                  <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+                </div>
+              </div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-left">（支持文档与图片格式）</div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-right"><a href="" class="ml15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>评价标签</a><a href="" class="ml15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="text-right pt5 fz_nwe">描述/评语</label></td>
+          <td>
+           <div class="form-group">
+              <div class="col-sm-10 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+              </div>
+              <div class="col-sm-2 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评分"></textarea>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-responsive _sm pl15 pr15 pb15">
+      <table class="table">
+        <tr>
+          <th width="12%" rowspan="2" scope="row" class=" bg-info">
+           <div class="text-center fz_nwe">
+            <img src="../images/teacher.jpg" class="img-60 bor-fff">
+            <div class="mt10">张少池</div>
+            <div>初一(1)班</div>
+           </div>
+          </th>
+          <td width="8%"><label class="text-right pt5 fz_nwe">上传附件</label></td>
+          <td width="80%">
+           <div class="form-group">
+              <div class="col-sm-6 has-feedback pl0">
+                <div class="input-group">
+                  <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+                  <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                  <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+                </div>
+              </div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-left">（支持文档与图片格式）</div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-right"><a href="" class="ml15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>评价标签</a><a href="" class="ml15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="text-right pt5 fz_nwe">描述/评语</label></td>
+          <td>
+           <div class="form-group">
+              <div class="col-sm-10 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+              </div>
+              <div class="col-sm-2 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评分"></textarea>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+  <div class="qkycadr mb15">
+    <div class="bor-bgray pa15 mb15 clear">
+      <div class="fl"><a type="" class="btn btn-default" data-toggle="modal" data-target="#addstudents"><i class="iconfont icon-zengjia fz_14 mr5"></i>添加学生</a></div>
+      <div class="fr"><a href="" class="mr15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>批量评价标签</a><a href="" class="mr15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a><a href="" class="btn btn-primary"><i class="iconfont icon-finish fz_14 mr5"></i>提交评价</a></div>
+    </div>
+    <div class="nodata">
+	  <svg class="icon fz_100" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wushuju"></use>
+      </svg>
+      <div class="pa15">请添加学生后，开始评价。</div>
+    </div>
+  </div>
+ 
+</div>
+<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="addstudents" tabindex="-1" role="dialog" aria-labelledby="addstudentsLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content" role="tabpanel">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">添加学生</h4>
+          </div>
+          <div class="modal-body clear pa0">
+            <table class="table_fff bor-b">
+              <tr>
+                <td width="26%" class="bor-r">
+                   <div class="pa15">
+                     <div class="has-feedback">
+                       <input type="text" class="form-control" placeholder="姓名搜索">
+                       <a class="iconfont icon-sousuo3 form-control-feedback" aria-hidden="true"></a>
+                     </div>
+                   </div>
+                   <div class="members-l pl15 pr15" id="accordion">
+                     <div class="grade">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="grade01 bg-gray"><i class="iconfont icon-shouqi fr"></i>一年级</a>
+                       <div id="collapseOne" class="panel-collapse collapse in">
+                         <div class="grade02 pl20">
+                           <a class="active">小一（1）班</a>
+                           <a>小一（2）班</a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="grade">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="grade01 bg-gray collapsed"><i class="iconfont icon-shouqi fr"></i>二年级</a>
+                       <div id="collapseTwo" class="panel-collapse collapse">
+                         <div class="grade02 pl20">
+                           <a>小二（1）班</a>
+                           <a>小二（2）班</a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="grade">
+                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="grade01 bg-gray collapsed"><i class="iconfont icon-shouqi fr"></i>三年级</a>
+                       <div id="collapseThree" class="panel-collapse collapse">
+                         <div class="grade02 pl20">
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                           <a>小三（1）班</a>
+                           <a>小三（2）班</a>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                </td>
+                <td width="74%">
+                  <div class="members clear pl15 pt15">
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                    <div class="col-sm-2 mt5 mb5 pl0 pr0">
+                      <label class="checkbox-qky child fz_nwe fl" lj="checkbox_grader"><a class="checkbox_a fl"><i class="iconfont icon-finish fz_12"></i></a></label>沈佳妮
+                    </div>
+                                    
+                  </div>
+                
+                </td>
+              </tr>
+            </table>
+            <div class="ma15 pl10 clear fz_15 bor-lb">已选中学生</div>
+            <div class="pl15 pr15">
+              <span class="label label-cour iblock mr5 mb2 alert fade in pr5 fz_14" role="alert">沈佳妮<button type="button" class="close fz_14 ml5 error_color" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></span>
+              <span class="label label-cour iblock mr5 mb2 alert fade in pr5 fz_14" role="alert">沈佳妮<button type="button" class="close fz_14 ml5 error_color" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></span>
+              <span class="label label-cour iblock mr5 mb2 alert fade in pr5 fz_14" role="alert">沈佳妮<button type="button" class="close fz_14 ml5 error_color" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></span>
+              <span class="label label-cour iblock mr5 mb2 alert fade in pr5 fz_14" role="alert">沈佳妮<button type="button" class="close fz_14 ml5 error_color" data-dismiss="alert" aria-label="Close" title="删除"><span aria-hidden="true">×</span></button></span>
+            </div>
+		  </div>
+          <div class="page-header ma0"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">确认添加</button>
+          </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<div class="modal fade" id="addlabel" tabindex="-1" role="dialog" aria-labelledby="addlabelLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content tab" role="tabpanel">
+            <div class="tab" role="tabpanel">
+              <!-- Nav tabs -->
+              <div class="modal-header nav nav-tabs pa0">
+                <ul class="fl" role="tablist">
+                  <li role="presentation" class="active"><a href="#Section01" aria-controls="home" role="tab" data-toggle="tab" class="fz_16">减分标签</a></li>
+                  <li role="presentation"><a href="#Section02" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">加分标签</a></li>
+                  
+                </ul>
+                <div class="fr pt15 pr15 text-warning"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div>
+              </div>
+              <!-- Tab panes -->
+              <div class="modal-body tab-content tabs">
+                <div role="tabpanel" class="tab-pane fade in active" id="Section01">
+                  <div class="row ma0">
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">上课期间随意打闹</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">升国旗仪式缺席1次</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">没完成作业</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-red fz_14 fz_nwe">-4分</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="Section02">
+                  <div class="row ma0">
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">上课期间表现良好</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">上课期间表现良好</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="alert alert-warning clear pointer" role="alert">
+                        <div class="col-sm-10 pa0">完成作业</div>
+                        <div class="col-sm-2 pa0 text-center"><span class="badge bg-grn fz_14 fz_nwe">+4分</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			  </div>
+            </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script src="../iconfont/ncolor/iconfont.js"></script> 
+<script>
+ seajs.use(["jq","bs","nav","dw","datep","rach"]
+ ,function(j,b,n,dw,datep,rach){
+	 opt.navli_j[1].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	  rach.rach_run(function(t){},function(t){});
+	 $(".members-l .grade02 a").on("click",function(){
+		$(".members-l .grade02 a").removeClass("active"); 
+		$(this).addClass("active"); 
+	 });
+});
+</script>
+</body>
+</html>
