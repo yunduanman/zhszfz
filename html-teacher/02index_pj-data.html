@@ -18,12 +18,6 @@
 
 <body class="qkybody">
 <div id="qkynav"></div>
-<div class="menu-n2 bg-gray">
-  <ul class="container">
-    <li><a href="02index_pj.html">评价情况</a></li>
-    <li><a href="02index_pj-data.html" class="active">评价数据</a></li>
-  </ul>
-</div>
 <div class="container mt15">
   <div class="qkycadr mb15">
     <div class="tab" role="tabpanel">
@@ -513,7 +507,7 @@
 <script>
  seajs.use(["jq","bs","nav","dw","rach"]
  ,function(j,b,n,dw,rach){
-	 opt.navli_j[1].isactive=true;
+	 opt.navli_j[2].isactive=true;
 	 $("#qkynav").qkynav(opt);	 
 	  rach.rach_run(function(t){},function(t){});
 });
