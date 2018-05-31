@@ -59,8 +59,9 @@ var opt={
 	navli_j:[
 			{name:"首页",attrcont:"href='01index.html'",isactive:false},
 			{name:"学生评价",attrcont:"href='02index_pj.html'",isactive:false},
-			{name:"成长档案",attrcont:"href='07index_da.html'",isactive:false},
-			{name:"应用中心",attrcont:"href=''",isactive:false},
+			{name:"评价审核",attrcont:"href='02index_pj-data.html'",isactive:false},
+			{name:"成长档案",attrcont:"href='03index_da.html'",isactive:false},
+			{name:"应用中心",attrcont:"href='04index_app.html'",isactive:false},
 	]
 }
 
