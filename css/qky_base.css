@@ -552,6 +552,7 @@ padding:10px;}
 .div-user{ background-image:url(../images/user-bg.jpg); background-size:100% 100%;}
 .table-db th{ min-width:60px;}
 .table-db td{ min-width:70px;}
+.classes-w{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
 
 /*左侧菜单*/
 .members,.members-l{overflow-y:auto;overflow-x: hidden;}
