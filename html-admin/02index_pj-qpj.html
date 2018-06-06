@@ -18,6 +18,14 @@
 
 <body class="qkybody">
 <div id="qkynav"></div>
+<div class="title-f bor-bgray">
+  <div class=" container">
+    <div class=" pa15 clear">
+      <div class="fl"><a type="" class="btn btn-default" data-toggle="modal" data-target="#addstudents"><i class="iconfont icon-zengjia fz_14 mr5"></i>添加学生</a></div>
+      <div class="fr"><a href="" class="mr15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>批量评价标签</a><a href="" class="mr15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a><a href="" class="btn btn-primary"><i class="iconfont icon-finish fz_14 mr5"></i>提交评价</a></div>
+    </div>
+  </div>
+</div>
 <div class="container mt15">
   <div class="qkycadr mb15">
     <div class="bor-bgray pa15 clear">
@@ -56,6 +64,86 @@
     <div class="bor-bgray pa15 mb15 clear">
       <div class="fl"><a type="" class="btn btn-default" data-toggle="modal" data-target="#addstudents"><i class="iconfont icon-zengjia fz_14 mr5"></i>添加学生</a></div>
       <div class="fr"><a href="" class="mr15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>批量评价标签</a><a href="" class="mr15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a><a href="" class="btn btn-primary"><i class="iconfont icon-finish fz_14 mr5"></i>提交评价</a></div>
+    </div>
+    <div class="table-responsive _sm pl15 pr15 pb15">
+      <table class="table">
+        <tr>
+          <th width="12%" rowspan="2" scope="row" class=" bg-info">
+           <div class="text-center fz_nwe">
+            <img src="../images/teacher.jpg" class="img-60 bor-fff">
+            <div class="mt10">张少池</div>
+            <div>初一(1)班</div>
+           </div>
+          </th>
+          <td width="8%"><label class="text-right pt5 fz_nwe">上传附件</label></td>
+          <td width="80%">
+           <div class="form-group">
+              <div class="col-sm-6 has-feedback pl0">
+                <div class="input-group">
+                  <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+                  <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                  <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+                </div>
+              </div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-left">（支持文档与图片格式）</div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-right"><a href="" class="ml15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>评价标签</a><a href="" class="ml15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="text-right pt5 fz_nwe">描述/评语</label></td>
+          <td>
+           <div class="form-group">
+              <div class="col-sm-10 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+              </div>
+              <div class="col-sm-2 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评分"></textarea>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-responsive _sm pl15 pr15 pb15">
+      <table class="table">
+        <tr>
+          <th width="12%" rowspan="2" scope="row" class=" bg-info">
+           <div class="text-center fz_nwe">
+            <img src="../images/teacher.jpg" class="img-60 bor-fff">
+            <div class="mt10">张少池</div>
+            <div>初一(1)班</div>
+           </div>
+          </th>
+          <td width="8%"><label class="text-right pt5 fz_nwe">上传附件</label></td>
+          <td width="80%">
+           <div class="form-group">
+              <div class="col-sm-6 has-feedback pl0">
+                <div class="input-group">
+                  <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+                  <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+                  <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+                </div>
+              </div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-left">（支持文档与图片格式）</div>
+              <div class="col-sm-3 pl0 pt5 co_93 text-right"><a href="" class="ml15 media-middle" data-toggle="modal" data-target="#addlabel"><i class="iconfont icon-zengjia fz_14"></i>评价标签</a><a href="" class="ml15 media-middle"><i class="iconfont icon-shanchu fz_14"></i>清空</a></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="text-right pt5 fz_nwe">描述/评语</label></td>
+          <td>
+           <div class="form-group">
+              <div class="col-sm-10 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评语"></textarea>
+              </div>
+              <div class="col-sm-2 pl0">
+                <textarea name="" cols="" rows="3" class="form-control" placeholder="输入评分"></textarea>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
     <div class="table-responsive _sm pl15 pr15 pb15">
       <table class="table">
@@ -370,6 +458,18 @@
 		$(".members-l .grade02 a").removeClass("active"); 
 		$(this).addClass("active"); 
 	 });
+$(function(){//固定菜单
+	//设置标杆
+	var _line=parseInt($(window).height()/3);
+	$(window).scroll(function(){
+		//滚动159px，固定定位
+		if ($(window).scrollTop()>280) {
+			$('.title-f').addClass('t-fixed');
+		}else{
+			$('.title-f').removeClass('t-fixed');
+		};
+	});
+});
 });
 </script>
 </body>

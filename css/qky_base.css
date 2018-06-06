@@ -708,3 +708,7 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 .grade .grade01.collapsed .icon-shouqi:before{content: "\e632";}
 .grade .grade02 a{ display:block; cursor:pointer; padding-left:10px; margin-top:10px; margin-bottom:10px;}
 .grade .grade02 a.active{ color:#27b0f2; border-left:2px solid #27b0f2;}
+
+/*固定标题*/
+.title-f{ display:none;position:fixed; background:#fff;top:50px; z-index:14; width:100%; left:0;}
+.t-fixed{ display:block;}
