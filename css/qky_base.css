@@ -552,7 +552,7 @@ padding:10px;}
 .div-user{ background-image:url(../images/user-bg.jpg); background-size:100% 100%;}
 .table-db th{ min-width:60px;}
 .table-db td{ min-width:70px;}
-.classes-w{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.classes-w{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:170px;}
 @media (min-width: 768px) {
 	.classes-w{ max-width:90px;}
 }
