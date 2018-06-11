@@ -54,11 +54,14 @@
 .co_blue{ color:#199ed8 !important;}
 
 .bg-gray{ background-color:#fafafa;}
+.bg-bgray{ background-color:#f0f0f0;}
 .bg-grn{ background-color:#73ceaf;}
+.bg-green{ background-color:#51c20c;}
 .bg-cyan{ background-color:#5dc0cf;}
 .bg-blue{ background-color:#6cb4df;}
 .bg-ylw{ background-color:#f1b866;}
 .bg-red{ background-color:#f37f75;}
+.bg-fff{ background:#fff;}
 
 .fz_we{ font-weight:bold!important;}
 .fz_nwe{ font-weight:normal!important;}
@@ -78,6 +81,7 @@
 .fz_40{ font-size:40px!important;}
 .fz_50{ font-size:50px!important;}
 .fz_60{ font-size:60px!important;}
+.fz_64{ font-size:64px!important;}
 .fz_70{ font-size:70px!important;}
 .fz_80{ font-size:80px!important;}
 .fz_90{ font-size:90px!important;}
@@ -160,6 +164,7 @@
 .img-110{ width:110px; height:110px;}
 .img-100{ width:100px; height:100px;}
 .img-80{ width:80px; height:80px;}
+.img-64{ width:64px; height:64px;}
 .img-60{ width:60px; height:60px;}
 .img-50{ width:50px; height:50px;}
 .img-40{ width:40px; height:40px;}

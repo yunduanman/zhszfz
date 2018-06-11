@@ -22,6 +22,7 @@ a:hover,a:focus{ text-decoration:none;}
    fill: currentColor;
    overflow: hidden;
 }
+.icon.media-middle{vertical-align:middle;}
 /*整体框架基础*/
 .qkyff_fluid{ background:#fff; width:100%;}
 .container {width:100%;}
@@ -712,3 +713,13 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 /*固定标题*/
 .title-f{ display:none;position:fixed; background:#fff;top:50px; z-index:14; width:100%; left:0;}
 .t-fixed{ display:block;}
+
+/*应用中心*/
+.app-one{ display:block; padding-top:45px; padding-bottom:40px; border-right:1px solid #efefef; border-bottom:1px solid #efefef;}
+.app-app1 .col-sm-2:nth-child(6n) .app-one{ border-right:none;}
+.app-app2 .col-sm-4:nth-child(3n) .app-one{ border-right:none;}
+.app-ban{ width:100%; height:auto;}
+/*角标*/
+.mark-topleft{overflow:hidden;height:66px;width:66px;}
+.triangle-topleft:after { content: "";position: absolute; display: block; border-style: solid; border-color: #a2d9f1 transparent transparent transparent; top:0;left: 0; border-width:50px 60px 0 0; z-index:1;}
+.weui-mark-lt { display: block; left: -7px; height: 24px; line-height:24px!important; position: relative; text-align: center; top: 12px; transform: rotate(45deg); width:96px;}
