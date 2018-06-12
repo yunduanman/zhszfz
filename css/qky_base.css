@@ -4,7 +4,7 @@
  */
 /**********1.整体框架基础**********/
 body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-serif;}
-.qkybody{ padding:50px 0; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%; color:#666;}
+.qkybody{ padding:50px 0 70px; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%; color:#666;}
 .qkybody.app{ padding:94px 0 50px;}
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
@@ -666,6 +666,53 @@ textarea.form-control.hei100[rows="2"]{ min-height:50px;}
 
 /*设置标签*/
 .alert .form-control{ margin-top:-4px;}
+
+/*设置行为标签*/
+.label-h-over{overflow-y:auto;}
+@media (min-height:568px){
+	.label-h-over{ max-height:232px;}
+	.members-l.label-h-over{height:232px;}
+}
+@media (min-height:668px){
+	.label-h-over{ max-height:332px;}
+	.members-l.label-h-over{height:332px;}
+}
+@media (min-height:708px){
+	.label-h-over{ max-height:348px;}
+	.members-l.label-h-over{height:348px;}
+}
+@media (min-height:768px){
+	.label-h-over{ max-height:422px;}
+	.members-l.label-h-over{height:422px;}
+}
+@media (min-height:796px){
+	.label-h-over{ max-height:460px;}
+	.members-l.label-h-over{height:460px;}
+}
+@media (min-height:828px){
+	.label-h-over{ max-height:492px;}
+	.members-l.label-h-over{height:492px;}
+}
+@media (min-height:900px){
+	.label-h-over{ max-height:552px;}
+	.members-l.label-h-over{height:552px;}
+}
+@media (min-height:960px){
+	.label-h-over{ max-height:634px;}
+	.members-l.label-h-over{height:634px;}
+}
+@media (min-height:1040px){
+	.label-h-over{ max-height:708px;}
+	.members-l.label-h-over{height:708px;}
+}
+@media (min-height:1080px){
+	.label-h-over{ max-height:744px;}
+	.members-l.label-h-over{height:744px;}
+}
+@media (min-height:1200px){
+	.label-h-over{ max-height:864px;}
+	.members-l.label-h-over{height:864px;}
+}
 /*modal-Left-弹窗左侧划入*/  
 .modal.left.fade .modal-dialog{  
 left: -320px;  
@@ -704,10 +751,10 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 /*班级展开及收起*/
 .grade{ margin-bottom:1px;}
 .grade a{ color:#666;}
-.grade .grade01{ display:block; padding:10px; font-size:15px;}
+.grade .grade01{ display:block; padding:10px 15px; font-size:15px;}
 .grade .grade01.icon-shouqi:before{content: "\e632";}
 .grade .grade01.collapsed .icon-shouqi:before{content: "\e632";}
-.grade .grade02 a{ display:block; cursor:pointer; padding-left:10px; margin-top:10px; margin-bottom:10px;}
+.grade .grade02 a{ display:block; cursor:pointer; padding-left:10px; margin-top:14px; margin-bottom:14px;}
 .grade .grade02 a.active{ color:#27b0f2; border-left:2px solid #27b0f2;}
 
 /*固定标题*/
