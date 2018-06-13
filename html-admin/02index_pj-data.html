@@ -30,8 +30,8 @@
           <li role="presentation" class="active"><a href="#Section4" aria-controls="school" role="tab" data-toggle="tab" class="fz_16">学校录入（1021）</a></li>
         </ul>
         <div class="fr fz_0 pt10 pr15">
-          <a type="" class="btn btn-default" data-toggle="modal" data-target="#add2"><i class="iconfont icon-pass-1-copy fz_14 mr5"></i>直接通过</a>
-          <a type="" class="btn btn-default" data-toggle="modal" data-target="#add2"><i class="iconfont icon-tuihui fz_14 mr5"></i>直接退回</a>
+          <a type="" class="btn btn-default"><i class="iconfont icon-pass-1-copy fz_14 mr5"></i>直接通过</a>
+          <a type="" class="btn btn-default" data-toggle="modal" data-target="#tips"><i class="iconfont icon-tuihui fz_14 mr5"></i>直接退回</a>
         </div>
       </div>
       <!-- Tab panes -->
@@ -324,7 +324,7 @@
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>陈燮霞</td>
-                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" title="退回"></a></td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" data-toggle="modal" data-target="#tips" title="退回"></a></td>
               </tr>
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
@@ -334,7 +334,7 @@
                 <td><span class="error_color">-3</span></td>
                 <td>陈薇影 学生</td>
                 <td>苏志燮</td>
-                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" title="退回"></a></td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" data-toggle="modal" data-target="#tips" title="退回"></a></td>
                 </tr>
               <tr>
                 <td><label class="checkbox-qky child" lj="checkbox_grader"><a class="checkbox_a ma0"><i class="iconfont icon-finish fz_12"></i></a></label></td>
@@ -344,7 +344,7 @@
                 <td><span class="text-success">+5</span></td>
                 <td>陈薇影 学生</td>
                 <td>綦美合</td>
-                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" title="退回"></a></td>
+                <td><a class="iconfont icon-chakan" title="查看"></a><a class="iconfont icon-bianji" title="编辑"></a><a class="iconfont icon-tuihui" data-toggle="modal" data-target="#tips" title="退回"></a></td>
                 </tr>
               </tbody>
             </table>
@@ -800,6 +800,27 @@
                 </div>
               </div>
             </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="tips" tabindex="-1" role="dialog" aria-labelledby="tipsLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">退回提示</h4>
+				
+			</div>
+			<div class="modal-body">
+               <div class="pa20 fz_16 text-center"><i class="iconfont icon-gantanhao error_color fz_30 media-middle mr5"></i>退回后将无法撤回，是否确认操作？</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">确认</button>
+			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
