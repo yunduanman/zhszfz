@@ -721,6 +721,10 @@ textarea.form-control.hei100[rows="2"]{ min-height:50px;}
 	.label-h-over{ max-height:864px;}
 	.members-l.label-h-over{height:864px;}
 }
+
+/*指标评价-开始评价-评价标签*/
+.alert.on-label{background: #f2fafd; border: 1px solid #21a2db; color: #21a2db;}
+
 /*modal-Left-弹窗左侧划入*/  
 .modal.left.fade .modal-dialog{  
 left: -320px;  
@@ -774,6 +778,7 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 .app-app1 .col-sm-2:nth-child(6n) .app-one{ border-right:none;}
 .app-app2 .col-sm-4:nth-child(3n) .app-one{ border-right:none;}
 .app-ban{ width:100%; height:auto;}
+.po_ab_r.app-txt{ bottom:0;top:auto; background:url(../images/app-txt_bg.png) 0 0 no-repeat; width:620px; height:74px; text-align:center; line-height:70px; font-size:16px;}
 /*角标*/
 .mark-topleft{overflow:hidden;height:66px;width:66px;}
 .triangle-topleft:after { content: "";position: absolute; display: block; border-style: solid; border-color: #a2d9f1 transparent transparent transparent; top:0;left: 0; border-width:50px 60px 0 0; z-index:1;}
