@@ -685,9 +685,13 @@ textarea.form-control.hei100[rows="2"]{ min-height:50px;}
 	.label-h-over{ max-height:422px;}
 	.members-l.label-h-over{height:422px;}
 }
-@media (min-height:796px){
+@media (min-height:793px){
 	.label-h-over{ max-height:460px;}
 	.members-l.label-h-over{height:460px;}
+}
+@media (min-height:805px){
+	.label-h-over{ max-height:470px;}
+	.members-l.label-h-over{height:470px;}
 }
 @media (min-height:828px){
 	.label-h-over{ max-height:492px;}
@@ -704,6 +708,10 @@ textarea.form-control.hei100[rows="2"]{ min-height:50px;}
 @media (min-height:1040px){
 	.label-h-over{ max-height:708px;}
 	.members-l.label-h-over{height:708px;}
+}
+@media (min-height:1066px){
+	.label-h-over{ max-height:736px;}
+	.members-l.label-h-over{height:736px;}
 }
 @media (min-height:1080px){
 	.label-h-over{ max-height:744px;}
