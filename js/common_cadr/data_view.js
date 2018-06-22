@@ -41,7 +41,7 @@ function xrzb(id,datas,tit){
 				{
 					name:tit,
 					type:'pie',
-					radius: ['30%', '60%'],
+					radius: ['20%', '50%'],
 					avoidLabelOverlap: false,
 					startAngle:20,
 					center: ['50%', '50%'],

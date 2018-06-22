@@ -756,7 +756,7 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 .names-list{ max-height:120px; overflow-y:auto; padding:10px 15px 10px;}
 .names-list .label-cour.label{ width:95px; padding-top:5px; padding-bottom:5px; margin-bottom:5px; margin-top:5px;}
 /*年级班级筛选*/
-.sift .label-cour.label{ width:82px; padding-top:5px; padding-bottom:5px; margin-bottom:5px; margin-top:5px;}
+.sift .label-cour.label{ width:120px; padding-top:5px; padding-bottom:5px; padding-left:0; padding-right:0; margin-bottom:5px; margin-top:5px;}
 .dynamic-sift{ padding-left:76px;}
 
 .table.mid-cen th,.table.mid-cen td{ vertical-align:middle; text-align:center;}
@@ -803,3 +803,6 @@ transition: opacity 0.3s linear, right 0.3s ease-out;
 .mark-topleft{overflow:hidden;height:66px;width:66px;}
 .triangle-topleft:after { content: "";position: absolute; display: block; border-style: solid; border-color: #a2d9f1 transparent transparent transparent; top:0;left: 0; border-width:50px 60px 0 0; z-index:1;}
 .weui-mark-lt { display: block; left: -7px; height: 24px; line-height:24px!important; position: relative; text-align: center; top: 12px; transform: rotate(45deg); width:96px;}
+
+/*档案*/
+.da-ban_bg{ background: url("../images/da-ban_bg.jpg") center 0px no-repeat #fff; height: 256px; }
